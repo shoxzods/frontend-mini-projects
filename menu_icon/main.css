@@ -1,0 +1,48 @@
+.menu , .menu-active {
+    height: 25px;
+    width: 2.7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu:hover .menu__items--center {
+    opacity: 0;
+}
+
+.menu:hover .menu__items--top{
+    transform: translateY(9px) rotate(39deg)
+}
+
+.menu:hover .menu__items--bottom{
+    transform: translateY(-9px) rotate(-39deg)
+}
+
+.menu__items {
+    border: 2px solid silver;
+}
+
+.menu-active .menu-active__items--center {
+    opacity: 0;
+}
+
+.menu-active  .menu-active__items--top{
+    transform: translateY(9px) rotate(39deg);
+}
+
+.menu-active  .menu-active__items--bottom {
+    transform: translateY(-9px) rotate(-39deg)
+}
+
+.menu__items--center , .menu__items--top , .menu__items--bottom  ,.center , .top , .bottom ,  .menu-active__items--center , .menu-active__items--bottom , .menu-active__items--top {
+    transition: 0.1s;
+}
+
+.top , .bottom {
+    transform: translateY(0) rotate(0deg);
+}
+
+.center {
+    opacity: 1;
+}
