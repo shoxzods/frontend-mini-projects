@@ -36,7 +36,7 @@
 }
 
 .menu__items--center , .menu__items--top , .menu__items--bottom  ,.center , .top , .bottom ,  .menu-active__items--center , .menu-active__items--bottom , .menu-active__items--top {
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 .top , .bottom {
