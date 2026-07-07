@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+}
+.accordion__items {
+  background: rgb(230, 230, 230);
+  cursor: pointer;
+  padding: 15px;
+  transition: 0.1s;
+}
+.accordion__items:hover {
+  background: rgb(216, 216, 216);
+}
+.accordion__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info1, .info2, .info3 {
+  padding: 15px;
+  transition: 0.1s all;
+}
+
+.hidden {
+  height: 0;
+  padding: 0 15px;
+  overflow-y: hidden;
+  transition: 0.1s all;
+}/*# sourceMappingURL=main.css.map */
