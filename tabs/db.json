@@ -1,0 +1,14 @@
+{
+  "london": {
+    "capital": "London",
+    "country": "England"
+  },
+  "paris": {
+    "capital": "Paris",
+    "country": "France"
+  },
+  "tokyo": {
+    "capital": "Tokyo",
+    "country": "Japan"
+  }
+}
