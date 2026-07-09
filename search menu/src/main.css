@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+}
+
+html {
+    height: 100dvh;
+}
+
+body {
+    height: 100%;
+}
+
+.menu {
+   display: flex;
+    height: 100%;
+}
+
+.sidenav {
+    background: silver;
+    width: 300px;
+}
+
+.sidenav > h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding:40px 0 10px 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid silver;
+    transition: 1s;
+}
+
+.list {
+    flex-direction: column;
+}
+
+.list > li {
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.1s  linear;
+}
+
+.list > li:hover {
+    background: rgb(226, 226, 226);
+}
+
+.context {
+    padding:40px 0 0 30px;
+}
+
+.context > h1 {   
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.context > div {
+    margin-top: 40px;
+    line-height: 30px;
+}

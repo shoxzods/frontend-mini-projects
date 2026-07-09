@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./src/dist",
+    "module": "es6",
+    "target": "es6",
+    // "sourceMap": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    // "moduleDetection": "force"
+  },
+  "include": ["./src/main.ts"],
+  "exclude": ["node_modules" , "dist"]
+}
