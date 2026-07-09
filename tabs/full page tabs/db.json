@@ -1,0 +1,22 @@
+{
+  "london": {
+    "title":"Home",
+    "description":"Home is where the heart is..",
+    "color":"red"
+  },
+  "paris": {
+    "title":"News",
+    "description":"Some news this fine day!",
+    "color":"green"
+  },
+  "tokyo": {
+    "title":"Contact",
+    "description":"Get in touch, or swing by for a cup of coffee.",
+    "color":"blue"
+  },
+  "oslo": {
+    "title":"About",
+    "description":"Who we are and what we do.",
+    "color":"orange"
+  }
+}
