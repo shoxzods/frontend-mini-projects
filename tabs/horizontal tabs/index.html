@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Tabs</title>
+    <title>Horizontal Tab</title>
     <link rel="stylesheet" href="./main.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <div class="border-[1px_solid_silver] max-w-7xl m-auto">
-        <ul class="flex bg-[#eeeeee]" id="list">
+    <div class="flex border-1 border-[silver] min-h-56">
+        <ul class="flex bg-[#eeeeee] flex-col w-40" id="list">
             <li data-type="london" class="p-4 cursor-pointer duration-75 ease-linear bg-[#d2d2d2] hover:bg-[#d2d2d2]">London</li>
-            <li data-type="paris" class="px-5 pt-4 cursor-pointer duration-75 ease-linear hover:bg-[#d2d2d2]">Paris</li>
+            <li data-type="paris" class="p-4 cursor-pointer duration-75 ease-linear hover:bg-[#d2d2d2]">Paris</li>
             <li data-type="tokyo" class="p-4 cursor-pointer duration-75 ease-linear hover:bg-[#d2d2d2]">Tokyo</li>
         </ul>
         <div id="description" class="p-4">

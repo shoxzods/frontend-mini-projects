@@ -1,0 +1,16 @@
+.animate-fade {
+            animation-name: whoop;
+            animation-timing-function: ease-in-out;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes whoop {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
