@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horizontal tab</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="">
+        <div id="description" class="p-4 text-center py-20 bg-[red] text-white">
+            <h1 class="text-4xl title">London</h1>
+            <p class="mt-6"> <span class="capital">London</span> is the capital city of <span class="country">England</span></p>
+        </div>
+        <ul class="grid grid-cols-4 text-center bg-[#eeeeee]" id="list">
+            <li data-type="london" class="p-4 cursor-pointer text-white bg-[red] hover:bg-[red]">London</li>
+            <li data-type="paris" class="px-5 pt-4 cursor-pointer  hover:bg-[#d2d2d2]">Paris</li>
+            <li data-type="tokyo" class="p-4 cursor-pointer hover:bg-[#d2d2d2]">Tokyo</li>
+            <li data-type="oslo" class="p-4 cursor-pointer hover:bg-[#d2d2d2]">Oslo</li>
+        </ul>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

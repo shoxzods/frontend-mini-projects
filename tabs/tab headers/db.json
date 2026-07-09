@@ -1,0 +1,22 @@
+{
+  "london": {
+    "capital": "London",
+    "country": "England",
+    "color":"red"
+  },
+  "paris": {
+    "capital": "Paris",
+    "country": "France",
+    "color":"green"
+  },
+  "tokyo": {
+    "capital": "Tokyo",
+    "country": "Japan",
+    "color":"blue"
+  },
+  "oslo": {
+    "capital": "Oslo",
+    "country": "Norway",
+    "color":"orange"
+  }
+}
