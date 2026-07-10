@@ -1,0 +1,21 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/styles",
+        },
+    ],
+    "liveSassCompile.settings.autoprefix": [
+        "last 2 versions",
+        "> 0.5%",
+        "not dead"
+    ],
+
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.excludeList": [
+        "/**/node_modules/**",
+        "/.vscode/**"
+    ],
+    "liveSassCompile.settings.useNewCompiler": true
+}
