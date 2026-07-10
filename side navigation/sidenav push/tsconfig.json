@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "module": "es6",
+    "target": "es6",
+
+    // Recommended Options
+    "strict": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  },
+  "include": ["./src"],
+  "exclude": ["./dist"]
+}
