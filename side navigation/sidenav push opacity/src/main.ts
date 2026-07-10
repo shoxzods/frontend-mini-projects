@@ -10,19 +10,23 @@ openNavButton.addEventListener("click" , (e:MouseEvent) => {
     disable.classList.add('hidden');
 });
 
-closeBtn.addEventListener("click" , ( e:MouseEvent ) => {
-    const btn = e.target as HTMLButtonElement;
+function sameProps() {
     navigation_right.classList.remove("position_index");
     navigation_left.classList.add('width');
+
+}
+
+
+
+closeBtn.addEventListener("click" , () => {
+    sameProps();
     disable.classList.remove('hidden');
-    btn.classList.remove("left")
 });
 
 disable.addEventListener("click" , (e:MouseEvent) => {
     const el = e.target as HTMLDivElement;
     if (el.classList.contains("hidden")) {
         el.classList.remove('hidden');
-        navigation_right.classList.remove("position_index");
-        navigation_left.classList.add('width');
+        sameProps();
     }
 });
