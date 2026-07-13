@@ -16,8 +16,6 @@ function sameProps() {
 
 }
 
-
-
 closeBtn.addEventListener("click" , () => {
     sameProps();
     disable.classList.remove('hidden');
