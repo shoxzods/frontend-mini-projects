@@ -1,0 +1,21 @@
+[
+    {
+        "title":"About",
+        "color":"bg-green-600"
+    },
+    
+    {
+        "title":"Blog",
+        "color":"bg-blue-600"
+    },
+    
+    {
+        "title":"Projects",
+        "color":"bg-red-600"
+    },
+    
+    {
+        "title":"Contact",
+        "color":"bg-gray-600"
+    }
+]
