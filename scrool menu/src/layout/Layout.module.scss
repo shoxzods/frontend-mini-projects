@@ -1,0 +1,23 @@
+.header {
+    height: 6%;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+
+    &__items {
+        text-decoration: none;
+        color: red;
+        font-size: 100%;
+    }
+}
+
+.container {
+    height: 100%;
+}
+
+.outlet {
+    height: 94%;
+}

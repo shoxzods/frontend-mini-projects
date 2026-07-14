@@ -1,0 +1,23 @@
+.container {
+    max-width: 500px;
+    display: flex;
+    margin:auto;
+    margin-top: 100px;
+    color: white;
+    overflow: auto;
+
+    &__items {
+        padding: 20px;
+        cursor: pointer;
+        background: rgb(45, 45, 45);
+        transition: 0.1s background ease-in-out;
+
+        &:hover {
+            background: rgb(124, 124, 124);
+        }
+    }
+}
+
+.outlet {
+    padding: 10px;
+}

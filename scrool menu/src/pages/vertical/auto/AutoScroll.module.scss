@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    background: rgb(5, 5, 5);
+    width: 200px;
+
+    &__links {
+        color: rgb(121, 121, 121);
+        text-decoration: none;
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 10px;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
