@@ -1,0 +1,21 @@
+.list {
+    display: flex;
+    gap:10px;
+}
+
+.list__items {
+    list-style: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.active {   
+    background: red;
+    height:4px;
+    width: 100%;
+    transition: 0.3s width ease-in-out;
+}
+
+.disactive {
+    width: 0;
+}
