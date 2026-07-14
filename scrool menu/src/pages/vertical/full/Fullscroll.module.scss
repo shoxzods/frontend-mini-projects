@@ -1,8 +1,7 @@
 .nav {
     display: flex;
     flex-direction: column;
-    background: rgb(5, 5, 5);
-    width: 200px;
+    background: #050505;
 
     &__links {
         color: rgb(121, 121, 121);
@@ -18,10 +17,20 @@
 }
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 200px 1fr;
     height: 100%;
 }
 
 .left_side {
-    padding: 15px;
+    padding: 15px 15px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+
+    p {
+        line-height: 5rem;
+        font-size: 2rem;
+    }
 }
