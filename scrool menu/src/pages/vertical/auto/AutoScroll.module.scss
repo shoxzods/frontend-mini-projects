@@ -4,6 +4,7 @@
     background: rgb(223, 223, 223);
     width: 100%;
     border-radius: 2px;
+    margin-top: 45px;
 
     &__links {
         color: rgb(1, 191, 255);
@@ -31,7 +32,7 @@
 }
 
 .right_side {
-    padding: 15px;
+    padding: 40px 0 0 15px;
     width: 100%;
     overflow-y: auto;
 

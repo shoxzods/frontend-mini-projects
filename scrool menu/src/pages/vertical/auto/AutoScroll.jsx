@@ -9,7 +9,6 @@ export default function AutoScroll() {
                     <Link className={styles.nav__links} to='/sidebar/vertical'>Full Side Nav</Link>
                     <Link className={styles.nav__links} to='/sidebar/vertical/auto'>Auto Side Nav</Link>
                     <Link className={styles.nav__links} to='/sidebar/vertical/fixed'>Fixed Side Nav</Link>
-
                 </nav>
             </div>
             <div className={styles.right_side}>
