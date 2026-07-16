@@ -1,5 +1,8 @@
 .header {
     background-color: #f5f5f5;
+    position: sticky;
+    width: 100%;
+    top: 0;
 }
 
 .nav {
@@ -26,6 +29,12 @@
 
 .outlet {
     height: 100%;
+    overflow: hidden;
+}
+
+.otlet_clone {
+    height: 100%;
+    overflow: auto;
 }
 
 .colors {
