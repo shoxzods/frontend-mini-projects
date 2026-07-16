@@ -13,4 +13,4 @@ export default [
   { id: 11, title: 'Partenres' },
   { id: 12, title: 'People' },
   { id: 13, title: 'Work' }
-]
+];

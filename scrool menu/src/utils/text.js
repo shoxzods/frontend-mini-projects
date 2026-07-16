@@ -1,0 +1,1 @@
+export default new Array(17).fill('Some text some text some text some text..');

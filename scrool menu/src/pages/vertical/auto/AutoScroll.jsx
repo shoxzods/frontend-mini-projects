@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";  
+import { NavLink  , Link } from "react-router-dom";  
 import styles from "./AutoScroll.module.scss";
 
 export default function AutoScroll() {
@@ -6,9 +6,10 @@ export default function AutoScroll() {
         <div className={styles.container}>
             <div className={styles.left_side}>
                 <nav className={ styles.nav }>
-                    <Link className={styles.nav__links} to='/sidebar/vertical'>Full Side Nav</Link>
-                    <Link className={styles.nav__links} to='/sidebar/vertical/auto'>Auto Side Nav</Link>
-                    <Link className={styles.nav__links} to='/sidebar/vertical/fixed'>Fixed Side Nav</Link>
+                    <Link className={ styles.nav__links } to='/sidebar/vertical/full'>Full Side Nav</Link>
+                    <NavLink className={ ({isActive}) => isActive ? styles.active : styles.nav__links } to='/sidebar/vertical/auto'>Auto Side Nav</NavLink>
+                    <Link className={styles.nav__links } to='/sidebar/vertical/fixed'>Fixed Side Nav</Link>
+                    <Link className={styles.nav__links } to='/sidebar/vertical/hide'>Hide Header</Link>
                 </nav>
             </div>
             <div className={styles.right_side}>

@@ -6,6 +6,7 @@ import VerticalLayout from './layout/VerticalLayout';
 import FullScroll from './pages/vertical/full/FullScroll';
 import AutoScroll from './pages/vertical/auto/AutoScroll';
 import FixedScroll from './pages/vertical/fixed/FixedScroll';
+import HideBar from './pages/vertical/hide/HideBar';
 
 function Routers() {
     return (
@@ -19,6 +20,7 @@ function Routers() {
                   <Route path='full' element = { <FullScroll /> } />
                   <Route path='auto' element = { <AutoScroll /> } />
                   <Route path='fixed' element = { <FixedScroll /> } />
+                  <Route path="hide" element = { <HideBar /> } />
               </Route>
             </Route>
             <Route path="*" element={<NotFound />} />

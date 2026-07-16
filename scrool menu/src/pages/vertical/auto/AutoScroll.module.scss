@@ -45,3 +45,12 @@
         font-size: 2rem;
     }
 }
+
+.active {
+    color: rgb(0, 66, 88);
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 10px;
+    transition: color 0.1s ease-in-out;    
+}
