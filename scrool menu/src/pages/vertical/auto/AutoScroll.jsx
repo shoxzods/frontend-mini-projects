@@ -12,6 +12,7 @@ export default function AutoScroll() {
                     <Link className={styles.nav__links } to='/sidebar/vertical/hide'>Hide Header</Link>
                     <Link className={styles.nav__links } to='/sidebar/vertical/hidetop'>Hide Header Top</Link>
                     <Link className={styles.nav__links } to='/sidebar/vertical/sticky'>Stikcy Header</Link>
+                    <Link className={styles.nav__links } to='/sidebar/vertical/shrink'>Shrink Header</Link>
                 </nav>
             </div>
             <div className={styles.right_side}>

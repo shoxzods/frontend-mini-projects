@@ -9,6 +9,7 @@ import FixedScroll from './pages/vertical/fixed/FixedScroll';
 import HideBar from './pages/vertical/hide/HideBar';
 import HideTop from './pages/vertical/hide/HideTop/HideTop'
 import StickyScroll from './pages/vertical/sticky/StickyScroll';
+import ShrinkMenu from './pages/vertical/shrink/ShrinkMenu';
 
 function Routers() {
     return (
@@ -25,6 +26,7 @@ function Routers() {
                   <Route path="hide" element = { <HideBar /> } />
                   <Route path="hidetop" element = { <HideTop /> } />
                   <Route path="sticky" element = { <StickyScroll /> } />
+                  <Route path="shrink" element = { <ShrinkMenu /> } />
               </Route>
             </Route>
             <Route path="*" element={<NotFound />} />
