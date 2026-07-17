@@ -13,6 +13,13 @@ export default function MainLayout() {
         else if ( location.pathname == "/sidebar/vertical/hide" )
             if ( window.scrollY > 10 )
                 return setHide(false)
+        
+        if ( location.pathname == "/sidebar/vertical/hidetop" ) {
+            if ( window.scrollY < 10 ) {
+                setScroll(false)
+                return setHide(false)
+            }
+        }
 
         setScroll(false)
         setHide(true)

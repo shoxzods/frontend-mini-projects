@@ -10,6 +10,7 @@ export default function AutoScroll() {
                     <NavLink className={ ({isActive}) => isActive ? styles.active : styles.nav__links } to='/sidebar/vertical/auto'>Auto Side Nav</NavLink>
                     <Link className={styles.nav__links } to='/sidebar/vertical/fixed'>Fixed Side Nav</Link>
                     <Link className={styles.nav__links } to='/sidebar/vertical/hide'>Hide Header</Link>
+                    <Link className={styles.nav__links } to='/sidebar/vertical/hidetop'>Hide Header Top</Link>
                 </nav>
             </div>
             <div className={styles.right_side}>

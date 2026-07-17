@@ -7,6 +7,7 @@ import FullScroll from './pages/vertical/full/FullScroll';
 import AutoScroll from './pages/vertical/auto/AutoScroll';
 import FixedScroll from './pages/vertical/fixed/FixedScroll';
 import HideBar from './pages/vertical/hide/HideBar';
+import HideTop from './pages/vertical/hide/HideTop/HideTop'
 
 function Routers() {
     return (
@@ -21,6 +22,7 @@ function Routers() {
                   <Route path='auto' element = { <AutoScroll /> } />
                   <Route path='fixed' element = { <FixedScroll /> } />
                   <Route path="hide" element = { <HideBar /> } />
+                  <Route path="hidetop" element = { <HideTop /> } />
               </Route>
             </Route>
             <Route path="*" element={<NotFound />} />

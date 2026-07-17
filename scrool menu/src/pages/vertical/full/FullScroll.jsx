@@ -9,6 +9,7 @@ export default function FullScroll() {
                 <Link className={styles.nav__links} to='/sidebar/vertical/auto'>Auto Side Nav</Link>
                 <Link className={styles.nav__links} to='/sidebar/vertical/fixed'>Fixed Side Nav</Link>
                 <Link className={styles.nav__links } to='/sidebar/vertical/hide'>Hide Header</Link>
+                <Link className={styles.nav__links } to='/sidebar/vertical/hidetop'>Hide Header Top</Link>
             </nav>
             <div className={styles.left_side}>
                 <h1>Full Sidebar</h1>
