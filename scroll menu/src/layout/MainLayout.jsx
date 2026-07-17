@@ -30,19 +30,33 @@ export default function MainLayout() {
         }
 
         if ( location.pathname == "/sidebar/vertical/sticky" ) {
-            window.document.documentElement.style.overflowY = "auto";
+                window.document.documentElement.style.overflowY = "auto";
             return setSticky(true)
         }
 
         if ( location.pathname == "/sidebar/vertical/shrink" ) {
             setShrink(true);
-            window.document.documentElement.style.overflowY = "auto";
+                window.document.documentElement.style.overflowY = "auto";
 
             if ( window.scrollY > 10 ) {
                 return setThin(true)
             }
 
             return setThin(false)
+        }
+
+        if ( location.pathname == "/sidebar/vertical/scroll" ) {       
+            window.document.documentElement.style.overflowY = "auto";
+            setTimeout(() => localStorage.setItem("scroll" , window.scrollY) , 50 );
+
+
+            if ( +localStorage.getItem("scroll") > window.scrollY ) {
+                setThin(false)
+                setShrink(true)
+            } else
+                setThin(true)
+
+            return 
         }
 
             setShrink(false)
