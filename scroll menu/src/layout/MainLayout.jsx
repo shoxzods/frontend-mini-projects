@@ -3,39 +3,42 @@ import styles from "./Layout.module.scss";
 import { useState } from "react";
 
 export default function MainLayout() {
-    const [ scroll , setScroll ] = useState(true);
     const [ hide , setHide ] = useState(true); 
     const [ sticky , setSticky ] = useState(false);
     const [ shrink , setShrink ] = useState(false);
     const [ thin , setThin ] = useState(false);
 
     function name() {
-        if ( location.pathname == "/sidebar/vertical/full" || location.pathname == "/sidebar/vertical/auto" )
-            return setScroll(true)
-        
+        if ( location.pathname == "/sidebar/vertical/full" || location.pathname == "/sidebar/vertical/auto" ) {
+            setSticky(false)
+            setShrink(false)
+
+            return window.document.documentElement.style.overflowY = "hidden";
+        }
+
         if ( location.pathname == "/sidebar/vertical/hide" )
             if ( window.scrollY > 10 )
                 return setHide(false)
         
         if ( location.pathname == "/sidebar/vertical/hidetop" ) {
+            window.document.documentElement.style.overflowY = "auto";
+            setSticky(false)
+
             if ( window.scrollY < 10 ) {
-                setScroll(false)
                 return setHide(false)
             }
         }
 
         if ( location.pathname == "/sidebar/vertical/sticky" ) {
-            setScroll(false);
+            window.document.documentElement.style.overflowY = "auto";
             return setSticky(true)
         }
 
         if ( location.pathname == "/sidebar/vertical/shrink" ) {
-            setScroll(false);
             setShrink(true);
+            window.document.documentElement.style.overflowY = "auto";
 
             if ( window.scrollY > 10 ) {
-                
-                // alert('sdfdf')
                 return setThin(true)
             }
 
@@ -44,10 +47,11 @@ export default function MainLayout() {
 
             setShrink(false)
             setSticky(false)
-            setScroll(false)
             setHide(true)
+            window.document.documentElement.style.overflowY = "auto";
     }
 
+    window.onload = name;
     window.onload = name;
     window.onwheel = name;
     window.onscroll = name;
@@ -78,14 +82,14 @@ export default function MainLayout() {
                     <NavLink to = "/sidebar/vertical" className={styles.nav__items }>
                         {({ isActive }) => (
                             <>
-                                <p className={ isActive ? styles.active_color:""}>horizontal</p>
+                                <p className={ isActive ? styles.active_color:""}>vertical</p>
                                 <div className={ isActive ? styles.active_border:styles.border}></div>
                             </>
                         )}
                     </NavLink>
                 </nav>
             </header>
-            <div className={ scroll ? styles.outlet : styles.outlet_clone}>
+            <div className={styles.outlet}>
                 <Outlet />
             </div>
         </div>

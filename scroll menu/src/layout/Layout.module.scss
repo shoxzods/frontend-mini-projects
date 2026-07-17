@@ -85,15 +85,6 @@
     flex-direction: column;
 }
 
-.outlet {
-    height: 100%;
-    overflow: hidden;
-}
-
-.otlet_clone {
-    height: 100%;
-    overflow: auto;
-}
 
 .active_color {
     color:#007bff;
@@ -109,4 +100,8 @@
 
 .border {
     width: 0;
+}
+
+.outlet {
+    height: 100%;
 }
