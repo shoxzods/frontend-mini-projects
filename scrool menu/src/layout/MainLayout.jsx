@@ -5,12 +5,13 @@ import { useState } from "react";
 export default function MainLayout() {
     const [ scroll , setScroll ] = useState(true);
     const [ hide , setHide ] = useState(true); 
+    const [ sticky , setSticky ] = useState(false);
 
     function name() {
         if ( location.pathname == "/sidebar/vertical/full" || location.pathname == "/sidebar/vertical/auto" )
             return setScroll(true)
         
-        else if ( location.pathname == "/sidebar/vertical/hide" )
+        if ( location.pathname == "/sidebar/vertical/hide" )
             if ( window.scrollY > 10 )
                 return setHide(false)
         
@@ -21,16 +22,30 @@ export default function MainLayout() {
             }
         }
 
-        setScroll(false)
-        setHide(true)
+        if ( location.pathname == "/sidebar/vertical/sticky" ) {
+            setScroll(false);
+            return setSticky(true)
+        }
+
+            setSticky(false)
+            setScroll(false)
+            setHide(true)
     }
 
     window.onwheel = name;
     window.onscroll = name;
+    window.onmouseenter = name;
+    window.onmouseleave = name;
+    window.onmousedown = name;
+    window.onmouseover = name;
+    window.onblur = name;
 
     return (
         <div className={styles.container}>
-            <header className={ hide ? styles.header : styles.header_hide}>
+            <div className={ sticky ? styles.menu__show : styles.menu}>
+                MAIN MENU
+            </div>
+            <header className={ hide ? sticky ? styles.sticky : styles.header : styles.header_hide}>
                 <nav className={ hide ? styles.nav : styles.text_hide }>
                     <NavLink to="/sidebar/horizontal" className={styles.nav__items }>
                         {({ isActive }) => (

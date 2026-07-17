@@ -11,6 +11,7 @@ export default function AutoScroll() {
                     <Link className={styles.nav__links } to='/sidebar/vertical/fixed'>Fixed Side Nav</Link>
                     <Link className={styles.nav__links } to='/sidebar/vertical/hide'>Hide Header</Link>
                     <Link className={styles.nav__links } to='/sidebar/vertical/hidetop'>Hide Header Top</Link>
+                    <Link className={styles.nav__links } to='/sidebar/vertical/sticky'>Stikcy Header</Link>
                 </nav>
             </div>
             <div className={styles.right_side}>
