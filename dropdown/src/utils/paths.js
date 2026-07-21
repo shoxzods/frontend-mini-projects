@@ -8,5 +8,10 @@ export default [
         id:2,
         name:"click",
         path:"click"  
+    },
+    {
+        id:3,
+        name:"cascading",
+        path:"cascading"  
     }
 ]
