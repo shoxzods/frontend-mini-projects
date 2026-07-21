@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import HoverDropDown from "./pages/HoverDropdown";
 import MainLayout from "./layout/MainLayout";
+import ClickDropDown from "./pages/ClickDropDown";
 
 const route = createBrowserRouter(
 [
@@ -15,8 +16,13 @@ const route = createBrowserRouter(
             },
 
             {
-                path:"/dropdown/hover",
+                path:"dropdown/hover",
                 element: <HoverDropDown />
+            },
+
+            {
+                path:"dropdown/click",
+                element: <ClickDropDown />
             }
         ]
     }
