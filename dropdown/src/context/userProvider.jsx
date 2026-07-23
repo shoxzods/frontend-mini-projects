@@ -14,11 +14,23 @@ const initialState = {
     subject:null,
     topics:null,
     sidebar:true,
-    route:false
+    route:false,
+    mobilemenu:false
 }
 
 function reducer( state , action ) {
     switch(action.type) {
+        case "toggleMobileMenu":
+            return {
+                ...state,
+                mobilemenu:state.mobilemenu ? false : true
+            }
+        case "closeMobileMenu":
+            return {
+                ...state,
+                mobilemenu:false
+            }
+
         case "checkRoute":
             return {
                 ...state,

@@ -4,4 +4,21 @@
     .samebg {
         @apply bg-gray-200 p-[4px_0_4px_5px] rounded-sm
     }
+
+    .menu__items {
+        border: 2px solid silver;
+    }
+
+    @media (max-width:768px) {
+        .drop-menu {
+            position: absolute;
+            flex-direction: column;
+            top: 48px;
+            width: 100%;
+            z-index: 20;
+            overflow: hidden;
+            background: rgba(49, 48, 48, 0.95);
+            text-align: center;
+        }
+    }
 }
