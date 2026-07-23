@@ -1,30 +1,94 @@
 import { useReducer } from "react"
 import { UserContext } from "./useContext"
+import route from "../routes"
 
 const initialState = {
     open:false,
+    hover:false,
+    clicks:false,
+
+    topnav:false,
+    subnav:false,
+    sidenav:false,
+    
     subject:null,
     topics:null,
+    sidebar:true,
+    route:false
 }
 
 function reducer( state , action ) {
     switch(action.type) {
-        case "toggleList":
+        case "checkRoute":
             return {
                 ...state,
-                open: state.open ? false : true
+                route: action.payload
+            }
+
+
+        case "toggleSideBar":
+            return {
+                ...state,
+                sidebar: state.sidebar ? false : true
+            }
+
+        case "toggleTopNav":
+            return {
+                ...state,
+                topnav: state.topnav ? false : true
+            }
+        case "toggleSubNav": 
+            return {
+                ...state,
+                subnav: state.subnav ? false : true
+            }
+
+        case "toggleSideNav":
+            return {
+                ...state,
+                sidenav: state.sidenav ? false : true
+            }
+
+        case "toggleHover":
+            return {
+                ...state,
+                open: state.hover ? false : true
             }
         
-        case "closeList":
+        case "toggleClick":
             return {
                 ...state,
-                open: false
+                click: state.click ? false : true
+            }
+
+        case "closeSubNav": 
+            return {
+                ...state,
+                subnav:false
+            }
+            
+        case "closeTopNav":
+            return {
+                ...state,
+                topnav:false
+            }
+
+        case "closeClick":
+            return {
+                ...state,
+                click: false
             }
         
-        case "openList":
+        case "closeHover":
             return {
                 ...state,
-                open:true
+                hover: false
+        }
+
+        case "openHover":
+            return {
+                ...state,
+                hover:true
             }
 
         case "subjectSelection":

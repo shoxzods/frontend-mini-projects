@@ -4,6 +4,8 @@ import MainLayout from "./layout/MainLayout";
 import ClickDropDown from "./pages/ClickDropDown";
 import CascadingDropDown from "./pages/CascadingDropDown";
 import NotFound from "./pages/NotFound";
+import SideNavDropDown from "./pages/SideNavDropdown";
+import DropUp from "./pages/DropUp";
 
 const route = createBrowserRouter(
 [
@@ -29,6 +31,14 @@ const route = createBrowserRouter(
             {
                 path:"dropdown/cascading",
                 element:<CascadingDropDown/>
+            },
+            {
+                path:"dropdown/sidenav",
+                element:<SideNavDropDown />
+            },
+            {
+                path:"dropdown/dropup",
+                element:<DropUp />
             }
         ]
     },

@@ -1,4 +1,4 @@
-import { useContext, useReducer, useRef, useState } from "react"
+import { useContext, useEffect, useRef} from "react"
 import { UserContext } from "../context/useContext"
 import titles from "../utils/cascading"
 
@@ -6,6 +6,10 @@ import titles from "../utils/cascading"
 export default function CascadingDropDown() {
     const { state , dispatch } = useContext(UserContext)
     const statics = useRef();
+
+    useEffect(() => {
+                dispatch({type:"checkRoute" , payload:false})
+    }, []);
 
     function subjectSelection(target) {
         dispatch({ type:"subjectSelection" , payload:target })
@@ -16,10 +20,8 @@ export default function CascadingDropDown() {
         dispatch({ type:"topicsSelection" , payload:target })
     }
 
-
-
     return (
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 pl-4 pt-4">
             <div className="flex gap-2">
                 <p>Subjects</p>
                 <select onChange={(e) => subjectSelection(e.target.value) } className="samebg cursor-pointer">

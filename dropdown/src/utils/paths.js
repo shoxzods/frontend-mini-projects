@@ -13,5 +13,15 @@ export default [
         id:3,
         name:"cascading",
         path:"cascading"  
+    },
+    {
+        id:4,
+        name:"sidenav",
+        path:"sidenav"  
+    },
+    {
+        id:5,
+        name:"dropup",
+        path:"dropup"
     }
 ]
